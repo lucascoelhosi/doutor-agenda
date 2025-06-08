@@ -6,7 +6,7 @@ Roteiro Aula 01: Setup do Projeto
 
 Roteiro Aula 02: Autenticação e Configurações do Estabelecimento
 [x] Tela de login e criação de conta
-[] Login com e-mail e senha usando Better Auth
-[] Login com o Google usando Better Auth
-[] Fundamentos do Next.js (Rotas, Páginas, Layouts)
-[] Criação de clínica
+[x] Login com e-mail e senha usando Better Auth
+[x] Login com o Google usando Better Auth
+[x] Fundamentos do Next.js (Rotas, Páginas, Layouts)
+[x] Criação de clínica
