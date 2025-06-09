@@ -10,3 +10,11 @@ Roteiro Aula 02: Autenticação e Configurações do Estabelecimento
 [x] Login com o Google usando Better Auth
 [x] Fundamentos do Next.js (Rotas, Páginas, Layouts)
 [x] Criação de clínica
+
+Roteiro Aula 03: Gerenciamento de Profissionais e Disponibilidade
+[] Sidebar e Route Groups
+[] Página de médicos
+[] Criação de médicos & NextSafeAction
+[] Listagem de médicos
+[] Atualização de médicos
+[] Deleção de médicos
