@@ -48,7 +48,7 @@ const DoctorCard = ({ doctor }: DoctorCardProps) => {
     useState(false);
   const deleteDoctorAction = useAction(deleteDoctor, {
     onSuccess: () => {
-      toast.success("Médico deletado com sucesso.");
+      toast.success("Médico excluído com sucesso.");
     },
     onError: () => {
       toast.error("Erro ao deletar médico.");
@@ -114,7 +114,10 @@ const DoctorCard = ({ doctor }: DoctorCardProps) => {
         </Dialog>
         <AlertDialog>
           <AlertDialogTrigger asChild>
-            <Button variant="outline" className="w-full">
+            <Button
+              variant="outline"
+              className="w-full text-red-500 hover:bg-red-500 hover:text-white"
+            >
               <TrashIcon />
               Deletar médico
             </Button>

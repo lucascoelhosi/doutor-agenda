@@ -1,4 +1,5 @@
 import { zodResolver } from "@hookform/resolvers/zod";
+import { Loader2, PlusIcon, SaveIcon } from "lucide-react";
 import { useAction } from "next-safe-action/hooks";
 import { useForm } from "react-hook-form";
 import { NumericFormat } from "react-number-format";
@@ -90,7 +91,11 @@ const UpsertDoctorForm = ({ doctor, onSuccess }: UpsertDoctorFormProps) => {
   });
   const upsertDoctorAction = useAction(upsertDoctor, {
     onSuccess: () => {
-      toast.success("Médico adicionado com sucesso.");
+      if (doctor) {
+        toast.success("Médico atualizado com sucesso.");
+      } else {
+        toast.success("Médico adicionado com sucesso.");
+      }
       onSuccess?.();
     },
     onError: () => {
@@ -382,11 +387,22 @@ const UpsertDoctorForm = ({ doctor, onSuccess }: UpsertDoctorFormProps) => {
           />
           <DialogFooter>
             <Button type="submit" disabled={upsertDoctorAction.isPending}>
-              {upsertDoctorAction.isPending
-                ? "Salvando..."
-                : doctor
-                  ? "Salvar"
-                  : "Adicionar"}
+              {upsertDoctorAction.isPending ? (
+                <>
+                  <Loader2 className="mr-1 h-4 w-4 animate-spin" />
+                  Salvando...
+                </>
+              ) : doctor ? (
+                <>
+                  <SaveIcon className="mr-1 h-4 w-4" />
+                  Salvar
+                </>
+              ) : (
+                <>
+                  <PlusIcon className="mr-1 h-4 w-4" />
+                  Adicionar
+                </>
+              )}
             </Button>
           </DialogFooter>
         </form>
