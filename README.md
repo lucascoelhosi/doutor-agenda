@@ -19,6 +19,6 @@ Roteiro Aula 03: Gerenciamento de Profissionais e Disponibilidade
 - [x] Página de médicos
 - [x] Proteger página de médicos (autenticação)
 - [x] Criação de médicos & NextSafeAction
-- [] Listagem de médicos
+- [x] Listagem de médicos
 - [] Atualização de médicos
 - [] Deleção de médicos
