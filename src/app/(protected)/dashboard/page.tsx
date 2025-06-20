@@ -95,7 +95,7 @@ const DashboardPage = async ({ searchParams }: DashboardPageProps) => {
           <AppointmentsChart dailyAppointmentsData={dailyAppointmentsData} />
           <TopDoctors doctors={topDoctors} />
         </div>
-        {/* 
+
         <div className="grid grid-cols-[2.25fr_1fr] gap-4">
           <Card>
             <CardHeader>
@@ -114,7 +114,7 @@ const DashboardPage = async ({ searchParams }: DashboardPageProps) => {
             </CardContent>
           </Card>
           <TopSpecialties topSpecialties={topSpecialties} />
-        </div> */}
+        </div>
       </PageContent>
     </PageContainer>
   );
